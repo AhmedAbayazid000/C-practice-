@@ -156,6 +156,5 @@ int main (){
 Student student{"Ahmed", "Abayazid", {2, 3, 4, 5, 3}}; 
 std::cout <<"Average "<< student.calculate_grade() << std::endl;
 student.print_data(); 
-std::cout<<"Name change"<<std::endl;
     return 0;
 }
