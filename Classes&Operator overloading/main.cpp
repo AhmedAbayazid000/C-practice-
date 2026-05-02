@@ -160,7 +160,28 @@
 // student.print_data(); 
 //     return 0;
 // }
+//This is to be able to read from your class (your own variable type) and we use friend to access private members 
+//class MyClass {
+// private:
+//     int value_;
 
+// public:
+//     friend std::ostream& operator<<(std::ostream& os, const MyClass& obj) {
+//         os << obj.value_;  // can access private directly
+//         return os;
+//     }
+
+//     friend std::istream& operator>>(std::istream& is, MyClass& obj) {
+//         is >> obj.value_;  // can access private directly
+//         return is;
+//     }
+// };
+//To use a type converter from your type to another type use a constructor 
+// classname (type to convert + name -> int a ) : variable name inside your class (name){}-> num_(a), denom_(1) {} 
+//To convert from your type (variable) to another add a convertion type operator 
+//operator TargetType() const { -> operator float() const {
+   // return your object converted to TargetType -> return nume_/denom_
+//}
 int main (){
 Rational quarter(1, 4);
 Rational one_third(1, 3);

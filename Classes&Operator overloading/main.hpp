@@ -15,6 +15,7 @@ public:
     void print() const; // prints number to console
     Rational operator+(const Rational &rhs) const; // rhs - Right Hand Side - right operand
     Rational operator-(const Rational &rhs) const;
+    Rational operator*(const Rational &rhs) const;
 
 private:
     int num_, den_;
